@@ -36,7 +36,7 @@ Getting Started
 .. code-block:: bash
 
     $ pre-commit install
-    $ git update-index --assume-unchanged .idea/runConfigurations/* .idea/orgit.iml
+    $ git update-index --assume-unchanged .idea/runConfigurations/* .idea/riso.iml
 
 
 2. Prepare the environment
