@@ -63,7 +63,7 @@ Useful commands
 
 .. code-block:: bash
 
-    $ docker-compose -f orgit/local.yml run --rm django pytest --cov --cov-report term-missing --cov-report html
+    $ docker-compose -f riso/local.yml run --rm django pytest --cov --cov-report term-missing --cov-report html
 
 
 =================

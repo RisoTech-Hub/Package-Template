@@ -2,7 +2,7 @@
     "project_name": "My Awesome Project",
     "project_slug": "{{ cookiecutter.project_name.lower()|replace(' ', '_')|replace('-', '_')|replace('.', '_')|trim() }}",
     "description": "Behold My Awesome Project!",
-    "repo_url": "https://gitlab.orgit.ai/{{ cookiecutter.project_slug }}",
+    "repo_url": "https://github.com/RisoTech-Hub/{{ cookiecutter.project_slug }}",
     "author_name": "Bin Nguyen",
     "email": "{{ cookiecutter.author_name.lower() | trim() |replace(' ', '-') }}@risotech.vn",
     "version": "0.1.0",
