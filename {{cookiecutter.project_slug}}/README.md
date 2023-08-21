@@ -1,11 +1,9 @@
-=====
 {{cookiecutter.project_name}}
 =====
 
 {{cookiecutter.description}}
 
 
-======================
 Installation and usage
 ======================
 
@@ -20,7 +18,6 @@ Quick start
     ]
 
 
-=================
 How to contribute
 =================
 
@@ -33,7 +30,6 @@ Getting Started
 
     - Run the following command in your terminal
 
-.. code-block:: bash
 
     $ pre-commit install
     $ git update-index --assume-unchanged .idea/runConfigurations/* .idea/riso.iml
@@ -43,8 +39,7 @@ Getting Started
 
     - Create a virtual environment with Python 3.10 or higher and activate it
 
-.. code-block:: bash
-
+    $ cd riso
     $ pip install -r requirements.txt
 
 
@@ -61,12 +56,10 @@ Useful commands
 
 - Run test with coverage
 
-.. code-block:: bash
 
     $ docker-compose -f riso/local.yml run --rm django pytest --cov --cov-report term-missing --cov-report html
 
 
-=================
 Other information
 =================
 
