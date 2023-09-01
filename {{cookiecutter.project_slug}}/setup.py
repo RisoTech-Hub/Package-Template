@@ -1,17 +1,22 @@
 #!/usr/bin/env python
+from distutils.util import convert_path
+
 try:
     from setuptools import setup
 except ImportError:
     from distutils.core import setup
 
-from {{cookiecutter.project_slug}} import __version__ as version
+main_ns = {}
+ver_path = convert_path("{{cookiecutter.project_slug}}/__init__.py")
+with open(ver_path) as ver_file:
+    exec(ver_file.read(), main_ns)
 
 with open("README.md") as readme_file:
     long_description = readme_file.read()
 
 setup(
     name="riso-{{cookiecutter.project_slug}}",
-    version=version,
+    version=main_ns["__version__"],
     description="{{cookiecutter.description}}",
     long_description=long_description,
     long_description_content_type="text/markdown",
