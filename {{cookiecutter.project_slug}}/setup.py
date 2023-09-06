@@ -1,10 +1,8 @@
 #!/usr/bin/env python
 from distutils.util import convert_path
 
-try:
-    from setuptools import setup
-except ImportError:
-    from distutils.core import setup
+from setuptools import find_packages, setup
+
 
 main_ns = {}
 ver_path = convert_path("{{cookiecutter.project_slug}}/__init__.py")
@@ -23,7 +21,7 @@ setup(
     author="{{cookiecutter.author_name}}",
     author_email="{{cookiecutter.email}}",
     url="{{cookiecutter.repo_url}}",
-    packages=["{{cookiecutter.project_slug}}"],
+    packages=find_packages(exclude=["*tests*"]),
     classifiers=[
         "Development Status :: 4 - Beta",
         "Environment ::  Web Environment",
